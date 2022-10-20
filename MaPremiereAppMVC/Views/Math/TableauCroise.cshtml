@@ -1,0 +1,21 @@
+﻿@{
+    void GenerateTable(int taille) {
+    <table>
+                <tbody>
+                    @for (int i = 1; i <= taille; i++)
+                {
+                        <tr>
+                            @for (int j = 1; j <= taille; j++)
+                        {
+                            int result = i * j;
+                                <td>@result</td>
+                        }
+                        </tr>
+                }
+                </tbody>
+    </table>
+    }
+}
+@{
+    GenerateTable(10);
+}

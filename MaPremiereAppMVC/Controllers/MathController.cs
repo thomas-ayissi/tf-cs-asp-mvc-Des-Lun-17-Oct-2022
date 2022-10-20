@@ -47,5 +47,10 @@ namespace MaPremiereAppMVC.Controllers
         {
             return result;
         }
+
+        public IActionResult TableauCroise()
+        {
+            return View();
+        }
     }
 }
