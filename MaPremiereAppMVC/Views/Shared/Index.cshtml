@@ -1,0 +1,18 @@
+﻿<div class="text-center container-md bg-info">
+    <h2>Ce fichier "Index.cshtml" n'est pas prioritaire...</h2>
+    <p>@DateTime.Now.ToString("hh:mm:ss")</p>
+    <p>1 X 10 = @(1 * 10)</p>
+    @{
+        string[] menu = new string[] { "Home","Lien1","Lien2" };
+        void CreateMenu(string[] links){
+                <nav>
+                    <ul>
+                        @foreach(string link in links){
+                            <li>@link</li>
+                    }
+                    </ul>
+            </nav>
+        }
+    }
+    <div>@{CreateMenu(menu);}</div>
+</div>

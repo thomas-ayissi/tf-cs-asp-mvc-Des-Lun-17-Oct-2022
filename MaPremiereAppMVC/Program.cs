@@ -40,6 +40,11 @@ app.MapControllerRoute(
     defaults : new { Controller = "Home", Action = "Privacy" }
     );
 
+//app.MapControllerRoute(
+//    name: "carre",
+//    pattern: "Math/{nombre}/auCarre",
+//    defaults: new { Controller = "Math", Action = "Carre" });
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
